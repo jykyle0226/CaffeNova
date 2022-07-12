@@ -10,10 +10,7 @@
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
 
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-  />
+
     <title>CaffeNova</title>
   </head>
 
@@ -25,12 +22,13 @@
         <div class="nav-wrapper">
           <ul>
             <li>
-              <a href="/" class="left brand-logo">&nbsp;&nbsp;CaffeNova</a>
+              <a href="/" class="left brand-logo">CaffeNova</a>
             </li>
           </ul>
           <ul class="right">
-            <li><a href="/about">About</a></li>
-            <li><a href="/cafes">DMV Cafes</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'cafes_create' %}">Add a Cafe</a></li>
+            <li><a href="/cafes/">DMV Cafes</a></li>
           </ul>
         </div>
       </nav>
