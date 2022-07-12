@@ -1,6 +1,7 @@
 from operator import length_hint
 from django.db import models
 from django.urls import reverse
+from django.contrib.auth.models import User
 # Create your models here.
 
 class Cafe(models.Model):
@@ -8,6 +9,7 @@ class Cafe(models.Model):
   location = models.CharField(max_length=100)
   review = models.FloatField()
   note = models.TextField(max_length=1000)
+  user = models.ForeignKey(User, on_delete=models.CASCADE)
 
   def __str__(self):
     return self.name

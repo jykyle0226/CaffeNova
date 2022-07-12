@@ -5,14 +5,20 @@
 
 <div class="card">
   <div class="card-content">
-    <span class="card-title">{{ cafes.name }}</span>
-    <p>Location: {{ cafes.location }}</p>
-    <p>Review: {{ cafes.review }}</p>
-    <p>Note: {{ cafes.note }}</p>
+    <div class="img-div">
+      <img src="{{ cafes.img }}" alt="">
+    </div>
+    <div class="cafe-div">
+      <span class="card-title">{{ cafes.name }}</span>
+      <p>Location: {{ cafes.location }}</p>
+      <p>Review: {{ cafes.review }}</p>
+      <p>Note: {{ cafes.note }}</p> 
+    </div>
   </div>
   <div class="card-action">
     <a href="{% url 'cafes_update' cafes.id %}">Edit</a>
     <a href="{% url 'cafes_delete' cafes.id %}">Delete</a>
+    <a href="/cafes/">Return</a>
   </div>
 </div>
 

@@ -4,14 +4,12 @@
 <h1>Cafe List</h1>
 
   {% for cafe in cafes %}
-<div class="card">
-  <div class="card-content">
-    <span class="card-title"></span>
-    <p>Cafe: {{ cafe.name }}</p>
-    <p>Location: {{ cafe.location }}</p>
-    <p>Review: {{ cafe.review }}</p>
-    <p>Note: {{ cafe.note }}</p>
+  <div class="card">
+    <a href="/cafes/{{ cafe.id }}">
+    <div class="card-content">
+      <span class="card-title">{{ cafe.name }}</span>
+    </div>
+    </a>
   </div>
-</div>
   {% endfor %} 
 {% endblock %}

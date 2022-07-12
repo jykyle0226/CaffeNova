@@ -26,7 +26,8 @@ class CafeCreate(CreateView):
 
 class CafeUpdate(UpdateView):
   model = Cafe
-  fields = ['name', 'location', 'review', 'note']
+  fields = '__all__'
+  success_url = '/cafes/'
 
 class CafeDelete(DeleteView):
   model = Cafe
