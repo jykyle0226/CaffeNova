@@ -1,8 +1,4 @@
-{% extends 'base.html' %} {% block content %}
-
-
-
-{% for cafe in cafes %}
+{% extends 'base.html' %} {% block content %} {% for cafe in cafes %}
 <div class="card">
   <a href="/cafes/{{ cafe.id }}">
     <div class="card-content">

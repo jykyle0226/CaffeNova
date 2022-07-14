@@ -111,17 +111,17 @@ a:visited {
 .button-31:focus {
   opacity: 0.75;
 }
-#a-tag{
+#a-tag {
   color: black;
 }
 
-.detail-h1{
+.detail-h1 {
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 50px;
   text-align: center;
 }
 
-.detail-card{
+.detail-card {
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 20px;
   display: flex;
@@ -136,19 +136,19 @@ a:visited {
   opacity: 0.9;
 }
 
-.detail-div{
+.detail-div {
   flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#detail-button{
-margin: 10px;
-width: 100px;
+#detail-button {
+  margin: 10px;
+  width: 100px;
 }
 
-.home-div{
+.home-div {
   font-family: "Dancing Script", cursive;
   background-color: grey;
   opacity: 0.9;
@@ -160,29 +160,28 @@ width: 100px;
   align-items: center;
   flex-direction: column;
   margin: 200px;
-
 }
 
-.home-h1{
+.home-h1 {
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 40px;
   padding: 45px;
 }
 
-.home-h11{
+.home-h11 {
   font-size: 70px;
 }
 
-.home-h2{
+.home-h2 {
   font-size: 30px;
   font-family: "PT Sans Narrow", sans-serif;
 }
 
-.h1-div{
+.h1-div {
   display: flex;
   flex: row;
 }
 
-.login-span{
+.login-span {
   text-decoration: underline;
 }
