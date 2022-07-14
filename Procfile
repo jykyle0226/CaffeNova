@@ -1,2 +1,1 @@
-
-web: gunicorn caffenova.wsgi
+web: gunicorn cafenova.wsgi
