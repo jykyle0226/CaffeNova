@@ -133,6 +133,7 @@ a:visited {
   padding: 20px;
   width: 700px;
   height: 400px;
+  opacity: 0.9;
 }
 
 .detail-div{
@@ -145,4 +146,43 @@ a:visited {
 #detail-button{
 margin: 10px;
 width: 100px;
+}
+
+.home-div{
+  font-family: "Dancing Script", cursive;
+  background-color: grey;
+  opacity: 0.9;
+  width: 1500px;
+  height: 400px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 200px;
+
+}
+
+.home-h1{
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 40px;
+  padding: 45px;
+}
+
+.home-h11{
+  font-size: 70px;
+}
+
+.home-h2{
+  font-size: 30px;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+.h1-div{
+  display: flex;
+  flex: row;
+}
+
+.login-span{
+  text-decoration: underline;
 }
