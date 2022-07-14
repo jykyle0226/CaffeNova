@@ -1,15 +1,16 @@
-
 {% extends 'base.html' %} {% block content %}
 
-<h1>Cafe List</h1>
+<h1 class="allcafes-h1">Caffè List</h1>
 
-  {% for cafe in cafes %}
-  <div class="card">
+{% for cafe in cafes %}
+<div class="allcafes-background">
+  <div class="allcafes">
     <a href="/cafes/{{ cafe.id }}">
-    <div class="card-content">
-      <span class="card-title">{{ cafe.name }}</span>
-    </div>
+      <div class="allcafes-content">
+        <span class="allcafes-card">{{ cafe.name }}</span>
+      </div>
     </a>
   </div>
-  {% endfor %} 
-{% endblock %}
+</div>
+
+{% endfor %} {% endblock %}

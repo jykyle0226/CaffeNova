@@ -30,6 +30,9 @@ def cafes_detail(request, cafes_id):
   cafes = Cafe.objects.get(id=cafes_id)
   return render(request, 'cafes/detail.html', {'cafes': cafes})
 
+def Allcafes_detail(request, cafes_id):
+  cafes = Cafe.objects.get(id=cafes_id)
+  return render(request, 'cafes/allCafeDetail.html', {'cafes': cafes})
 
 
 def signup(request):

@@ -1,60 +1,49 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arima:wght@100;200&family=Dancing+Script:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
-
-
-    <title>CaffeNova</title>
+    <title>CaffèNova</title>
   </head>
 
-
   <body>
-
     <header class="navbar-fixed">
-      <nav>
-        <div class="nav-wrapper">
-          <ul>
-            <li>
-              <a href="/" class="left brand-logo">CaffeNova</a>
-            </li>
-          </ul>
-          <ul class="right">
-            {% if user.is_authenticated %}
-            <li><a href="/allCafes/">All Cafes</a></li>
-            <li><a href="/cafes/">My Cafes</a></li>
-            <li><a href="{% url 'cafes_create' %}">Add a Cafe</a></li>
-            <li><a href="{% url 'logout' %}">Log Out</a></li>
-            {% else %}
-            <li><a href="{% url 'signup' %}">Sign Up</a></li>
-            <li><a href="{% url 'login' %}">Log In</a></li>
-            {% endif %}
-          </ul>
-        </div>
-      </nav>
+        <nav class="nav">
+            <ul>
+              <li class="left">
+                <a href="/" class="left-brand-logo">CaffèNova</a>
+              </li>
+            </ul>
+            <ul class="right">
+              {% if user.is_authenticated %}
+              <li><a id="right-li" href="/allCafes/">All Caffès</a></li>
+              <li><a id="right-li" href="/cafes/">My Caffès</a></li>
+              <li>
+                <a id="right-li" href="{% url 'cafes_create' %}">Add a Cafe</a>
+              </li>
+              <li><a id="right-li" href="{% url 'logout' %}">Log Out</a></li>
+              {% else %}
+              <li><a id="right-li" href="{% url 'signup' %}">Sign Up</a></li>
+              <li><a id="right-li" href="{% url 'login' %}">Log In</a></li>
+              {% endif %}
+            </ul>
+        </nav>     
     </header>
 
-    <main class="container">
-      {% block content %} {% endblock %}
-    </main>
-
+    <main class="container">{% block content %} {% endblock %}</main>
 
     <footer class="page-footer">
-      <div class="right">
-        All Rights Reserved, &copy; 2022 CaffeNova Instagram @CaffeNova
-      </div>
+      <div>All Rights Reserved, &copy; 2022 CaffèNova Instagram @CaffeNova</div>
     </footer>
-
-    
   </body>
-
-
-
-
 </html>
