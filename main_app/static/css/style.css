@@ -1,6 +1,6 @@
 body {
   background-image: url("../image/photo-1554118811-1e0d58224f24.jpeg");
-  background-size: 1950px 1300px;
+  background-size: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
@@ -160,6 +160,12 @@ a:visited {
   align-items: center;
   flex-direction: column;
   margin: 200px;
+}
+
+.mother-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-h1 {
