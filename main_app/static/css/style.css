@@ -153,8 +153,9 @@ a:visited {
   font-family: "Dancing Script", cursive;
   background-color: grey;
   opacity: 0.9;
-  width: 1500px;
-  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   display: flex;
   justify-content: center;
