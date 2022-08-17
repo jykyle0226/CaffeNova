@@ -1,6 +1,6 @@
 body {
   background-image: url("../image/photo-1554118811-1e0d58224f24.jpeg");
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
