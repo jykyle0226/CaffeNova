@@ -2,10 +2,6 @@ body {
   background-image: url("../image/photo-1554118811-1e0d58224f24.jpeg");
   background-size: 100%;
   background-size: cover;
-<<<<<<< HEAD
-=======
-  background-attachment: fixed;
->>>>>>> f0744a80f3a606f0c1b8deb5838362f9698cab21
   background-repeat: no-repeat;
 }
 
@@ -163,9 +159,8 @@ a:visited {
   font-family: "Dancing Script", cursive;
   background-color: grey;
   opacity: 0.9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 1500px;
+  height: 400px;
   text-align: center;
   display: flex;
   justify-content: center;
