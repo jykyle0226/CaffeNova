@@ -1,9 +1,10 @@
 body {
   background-image: url("../image/photo-1554118811-1e0d58224f24.jpeg");
   background-size: 100%;
-  background-attachment: fixed;
+  background-size: cover;
   background-repeat: no-repeat;
 }
+
 .navbar-fixed {
   height: 7em;
   margin: 20px;
@@ -148,6 +149,12 @@ a:visited {
   width: 100px;
 }
 
+.login-div{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .home-div {
   font-family: "Dancing Script", cursive;
   background-color: grey;
