@@ -150,6 +150,7 @@ a:visited {
 }
 
 .login-div{
+
   text-align: center;
   display: flex;
   justify-content: center;
@@ -197,4 +198,13 @@ a:visited {
 
 .login-span {
   text-decoration: underline;
+}
+
+#login-btn{
+  width: 200px;
+}
+
+#create-btn{
+  width: 200px;
+  margin: 20px;
 }
