@@ -16,6 +16,6 @@ Python | Django | HTML | CSS | Postgresql | Heroku
 [click here](https://caffenova.herokuapp.com/) to see the deployed page!
 
 ## Future Enhancements:
- * Additional Styling
+ * Additional Styling ✅
  * AWS image 
  * Like/comment 
