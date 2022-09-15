@@ -10,10 +10,11 @@
         <p>Location: {{ cafes.location }}</p>
         <p>Review: {{ cafes.review }}</p>
         <p>Note: {{ cafes.note }}</p>
+        <a href="https://www.google.com/maps/search/{{ cafes.name }} " target="_blank"><button class="button-31" id="detail-button">Map</button></a>
       </div>
       <div class="detail-action">
         <button id="detail-button" class="button-31">
-          <a href="/cafes/">Return</a>
+          <a href="/allCafes/">Return</a>
         </button>
       </div>
     </div>
